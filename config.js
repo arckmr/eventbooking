@@ -1,0 +1,2 @@
+exports.jwtSecret = 'YHscJUd4ZnYCf8Mx9KMLznagI8w7/n5JVG4RI9uyaPI=';
+exports.mongoDbURI = 'mongodb+srv://arckmr:password1234567@cluster0.j1iw9cu.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0'
