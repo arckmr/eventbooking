@@ -3,7 +3,7 @@ const express = require("express");
 const mongoose = require("mongoose");
 const app = express();
 const config = require("@config");
-const bookingRoutes = require("./routes/bookingRoutes");
+const eventRoutes = require("./routes/bookingRoutes");
 
 mongoose
   .connect(config.mongoDbURI)
