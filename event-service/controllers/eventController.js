@@ -1,4 +1,5 @@
 const Event = require("../models/Events");
+const mongoose = require("mongoose");
 
 // Create a new event
 exports.createEvent = async (req, res) => {
@@ -24,6 +25,8 @@ exports.getEvents = async (req, res) => {
 // Get a single event by ID
 exports.getEventById = async (req, res) => {
   try {
+    console.log(req.params.id, "params");
+    // const id = mongoose.Types.ObjectId(req.params.id);
     const event = await Event.findById(req.params.id);
     if (!event) {
       return res.status(404).send({ error: "Event not found" });
